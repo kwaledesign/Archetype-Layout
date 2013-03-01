@@ -3,14 +3,12 @@ simpleGrid
 
 A simple, responsive grid for rapid prototyping in the browser
 
-* Seemless plun-n-play into pre-existing projects
-* No dependencies, other than Sass
-* Less than 1kb
+* Seemless plug-n-play into pre-existing projects
+* Build on Compass and Sass
 * Infinite nesting and stacking
 
 
-<h2>Base Classes</h2>
-<div class="data">
+###Classes / @extenders
 <table>
   <thead>
     <tr>
@@ -25,7 +23,7 @@ A simple, responsive grid for rapid prototyping in the browser
   </tr>
   <tr class="even">
     <th><code>unit</code></th>
-    <td>Base class which divides a line into columns. The sum of all children of a row should be equal to one. (Beware of the [sub-pixel rounding](http://palantir.net/blog/responsive-design-s-dirty-little-secret)). 
+    <td>Base class which divides a line into columns. The sum of all children of a row should be equal to one. (Beware of [sub-pixel rounding](http://palantir.net/blog/responsive-design-s-dirty-little-secret) issues). 
   </tr>
   <tr class="odd">
     <th><code>sizeXofY</code></th>
@@ -33,7 +31,6 @@ A simple, responsive grid for rapid prototyping in the browser
   </tr>
 </tbody>
 </table>
-</div>
 
 ###Note:
 * Use optional grid-classes for OOCSS styling, or Sass @extend for cleaner markup
