@@ -1,0 +1,184 @@
+/**
+ * simpleGrid
+ * 
+ * for when you need a quick and dirty grid
+ */
+/**
+ * Import Compass 
+ *
+ * used for easy clearfix and borderbox on demo
+ */
+/**
+ * grid variables
+ */
+/**
+ * Grid Debug
+ * 
+ * visually debug grid layouts
+ */
+/**
+ * Force border-box sizing for everything
+ */
+/* line 37, ../sass/_grid.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * visual demo styles
+ */
+/* line 43, ../sass/_grid.scss */
+.grid-demo .unit {
+  background: #999999;
+  opacity: 0.5;
+  height: 40px;
+  border: 1px solid purple;
+}
+/* line 26, ../sass/_grid.scss */
+.grid-demo .row {
+  background-color: purple;
+  opacity: 0.6;
+}
+
+/**
+ * Grid Rows and Units
+ */
+/* line 50, ../sass/_grid.scss */
+.row {
+  *zoom: 1;
+  padding: 0 10px;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 51, ../sass/_grid.scss */
+.unit {
+  float: left;
+  padding: 0 10px;
+}
+
+/* line 52, ../sass/_grid.scss */
+.unitRight {
+  float: right;
+}
+
+/**
+ * Grid Unit Extenders
+ */
+/* line 58, ../sass/_grid.scss */
+.size1of1 {
+  float: none;
+}
+
+/* line 59, ../sass/_grid.scss */
+.size1of2, .size2of4, .size3of6, .size4of8 {
+  width: 50%;
+}
+
+/* line 60, ../sass/_grid.scss */
+.size1of3, .size2of6 {
+  width: 33.33333%;
+}
+
+/* line 61, ../sass/_grid.scss */
+.size1of4, .size2of8 {
+  width: 25%;
+}
+
+/* line 62, ../sass/_grid.scss */
+.size1of5 {
+  width: 20%;
+}
+
+/* line 63, ../sass/_grid.scss */
+.size1of6 {
+  width: 16.6666666%;
+}
+
+/* line 64, ../sass/_grid.scss */
+.size1of7 {
+  width: 14.2857143%;
+}
+
+/* line 65, ../sass/_grid.scss */
+.size1of8 {
+  width: 12.5%;
+}
+
+/* line 67, ../sass/_grid.scss */
+.size2of3, .size4of6 {
+  width: 66.66666%;
+}
+
+/* line 69, ../sass/_grid.scss */
+.size2of5 {
+  width: 40%;
+}
+
+/* line 71, ../sass/_grid.scss */
+.size2of7 {
+  width: 28.5714286%;
+}
+
+/* line 74, ../sass/_grid.scss */
+.size3of4, .size6of8 {
+  width: 75%;
+}
+
+/* line 75, ../sass/_grid.scss */
+.size3of5 {
+  width: 60%;
+}
+
+/* line 77, ../sass/_grid.scss */
+.size3of7 {
+  width: 42.8571429%;
+}
+
+/* line 78, ../sass/_grid.scss */
+.size3of8 {
+  width: 37.5%;
+}
+
+/* line 80, ../sass/_grid.scss */
+.size4of5 {
+  width: 80%;
+}
+
+/* line 82, ../sass/_grid.scss */
+.size4of7 {
+  width: 57.1428572%;
+}
+
+/* line 85, ../sass/_grid.scss */
+.size5of6 {
+  width: 83.3333333%;
+}
+
+/* line 86, ../sass/_grid.scss */
+.size5of7 {
+  width: 71.4285715%;
+}
+
+/* line 87, ../sass/_grid.scss */
+.size5of8 {
+  width: 62.5%;
+}
+
+/* line 89, ../sass/_grid.scss */
+.size6of7 {
+  width: 85.7142858%;
+}
+
+/* line 92, ../sass/_grid.scss */
+.size7of8 {
+  width: 87.5%;
+}
