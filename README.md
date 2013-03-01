@@ -23,7 +23,7 @@ A simple, responsive grid for rapid prototyping in the browser
   </tr>
   <tr class="even">
     <th><code>unit</code></th>
-    <td>Base class which divides a line into columns. The sum of all children of a row should be equal to one. (Beware of [sub-pixel rounding](http://palantir.net/blog/responsive-design-s-dirty-little-secret) issues). 
+    <td>Base class which divides a line into columns. The sum of all children of a row should be equal to one. Beware of [sub-pixel rounding](http://palantir.net/blog/responsive-design-s-dirty-little-secret) issues. 
   </tr>
   <tr class="odd">
     <th><code>sizeXofY</code></th>
