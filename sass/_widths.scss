@@ -1,0 +1,175 @@
+/**
+ * Widths
+ * 
+ * Intrisic and proportional widths to be extended to a grid object
+ *
+ */
+
+
+/**
+ * Intrinsic widths
+ * 
+ */
+
+
+/**
+ * Fit Children
+ *
+ * Make an element shrink wrap its content.
+ */
+%size-fit-children {
+    display: block;
+    float: left;
+    width: auto !important;
+}
+
+/**
+ * Fit Parent
+ *
+ * Make an element the width of its parent.
+ */
+%size-fit-parent {
+    display: block;
+    width: 100%;
+}
+
+/**
+ * Make an element fill the remaining space.
+ * 
+ * Note: This will hide overflow.
+ */
+%size-fill {
+    display: block;
+    overflow: hidden;
+    width: auto !important;
+}
+
+/**
+ * Proportional widths
+ * 
+ * Grid unit extenders - specify the proportional width of a grid unit
+ */
+
+%size1of1 { width: 100%; }
+%size1of2,
+%size2of4,
+%size3of6,
+%size5of10,
+%size6of12 { width: 50%; }
+%size1of3,
+%size2of6,
+%size4of8,
+%size4of12 { width: 33.33333%; }
+%size1of4,
+%size2of8,
+%size3of12 { width: 25%; }
+%size1of5,
+%size2of10 { width: 20%; }
+%size1of6,
+%size2of12 { width: 16.6666666%; }
+%size1of7 { width: 14.2857143%; }
+%size1of8 { width: 12.5%; }
+%size1of10 { width: 10%; }
+%size1of12 { width: 8.333%; }
+
+%size2of3,
+%size4of6 { width: 66.66666%; }
+%size2of5 { width: 40%; }
+%size2of7 { width: 28.5714286%; }
+
+%size3of4,
+%size6of8 { width: 75%; }
+%size3of5 { width: 60%; }
+%size3of7 { width: 42.8571429%; }
+%size3of8 { width: 37.5%; }
+%size3of10 { width: 30%; }
+
+%size4of5 { width: 80%; }
+%size4of7 { width: 57.1428572%; }
+%size4of10 { width: 40%; }
+
+%size5of6 { width: 83.3333333%; }
+%size5of7 { width: 71.4285715%; }
+%size5of8 { width: 62.5%; }
+%size5of12 { width: 41.666%; }
+
+%size6of7 { width: 85.7142858%; }
+%size6of10 { width: 60%; }
+
+%size7of8 { width: 87.5%; }
+%size7of10 { width: 70%; }
+%size7of12 { width: 58.333%; }
+
+
+/**
+ * Responsive Prefixed Widths
+ * 
+ */
+@mixin prefix($prefix: "sm") {
+  %#{$prefix}-size1of1 { width: 100%; }
+  %#{$prefix}-size1of2,
+  %#{$prefix}-size2of4,
+  %#{$prefix}-size3of6,
+  %#{$prefix}-size5of10,
+  %#{$prefix}-size6of12 { width: 50%; }
+  %#{$prefix}-size1of3,
+  %#{$prefix}-size2of6,
+  %#{$prefix}-size4of8,
+  %#{$prefix}-size4of12 { width: 33.33333%; }
+  %#{$prefix}-size1of4,
+  %#{$prefix}-size2of8,
+  %#{$prefix}-size3of12 { width: 25%; }
+  %#{$prefix}-size1of5,
+  %#{$prefix}-size2of10 { width: 20%; }
+  %#{$prefix}-size1of6,
+  %#{$prefix}-size2of12 { width: 16.6666666%; }
+  %#{$prefix}-size1of7 { width: 14.2857143%; }
+  %#{$prefix}-size1of8 { width: 12.5%; }
+  %#{$prefix}-size1of10 { width: 10%; }
+  %#{$prefix}-size1of12 { width: 8.333%; }
+
+  %#{$prefix}-size2of3,
+  %#{$prefix}-size4of6 { width: 66.66666%; }
+  %#{$prefix}-size2of5 { width: 40%; }
+  %#{$prefix}-size2of7 { width: 28.5714286%; }
+
+  %#{$prefix}-size3of4,
+  %#{$prefix}-size6of8 { width: 75%; }
+  %#{$prefix}-size3of5 { width: 60%; }
+  %#{$prefix}-size3of7 { width: 42.8571429%; }
+  %#{$prefix}-size3of8 { width: 37.5%; }
+  %#{$prefix}-size3of10 { width: 30%; }
+
+  %#{$prefix}-size4of5 { width: 80%; }
+  %#{$prefix}-size4of7 { width: 57.1428572%; }
+  %#{$prefix}-size4of10 { width: 40%; }
+
+  %#{$prefix}-size5of6 { width: 83.3333333%; }
+  %#{$prefix}-size5of7 { width: 71.4285715%; }
+  %#{$prefix}-size5of8 { width: 62.5%; }
+  %#{$prefix}-size5of12 { width: 41.666%; }
+
+  %#{$prefix}-size6of7 { width: 85.7142858%; }
+  %#{$prefix}-size6of10 { width: 60%; }
+
+  %#{$prefix}-size7of8 { width: 87.5%; }
+  %#{$prefix}-size7of10 { width: 70%; }
+  %#{$prefix}-size7of12 { width: 58.333%; }
+}
+
+@media screen and (min-width: $sm-bp) {
+  @include prefix("sm");
+}
+
+@media screen and (min-width: $md-bp) {
+  @include prefix("md");
+}
+
+@media screen and (min-width: $lg-bp) {
+  @include prefix("lg");
+}
+
+@media screen and (min-width: $xl-bp) {
+  @include prefix("xl");
+}
+
