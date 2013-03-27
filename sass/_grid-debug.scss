@@ -1,0 +1,22 @@
+/**
+ * Grid Debug
+ * 
+ * visually debug grid layouts
+ */
+
+$debug-class: grid-unit;
+
+@mixin grid-debug($color: purple, $opacity: .6) {
+  background-color: $color; 
+  opacity: $opacity;
+}
+
+
+/**
+ * visual demo styles
+ */
+%#{$debug-class} {
+  .grid-row { @include grid-debug; } 
+  .grid-unit {background: #999999; opacity: 0.5; height: 40px; border: 1px solid purple;}
+}
+
