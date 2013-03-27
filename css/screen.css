@@ -1,29 +1,4 @@
 /**
- * Layout Utilities
- * 
- * Optional utilities for layout and grid objects
- * These are disabled by default assuming your project already has these in place
- * If needed, include this partial at the top of your screen.scss
- */
-/**
- * Import Compass 
- */
-/**
- * Clearfix
- */
-/**
- * Force border-box sizing for everything
- */
-/* line 27, ../sass/_utilities.scss */
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/**
  * Grid
  * 
  */
