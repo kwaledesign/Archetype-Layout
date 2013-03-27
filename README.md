@@ -13,5 +13,5 @@ A simple layout module for quickly prototyping responsive layouts.
 
 [Demo 1](http://cdpn.io/rDpjn)
 
-[Demo](http://cdpn.io/IBzDn)
+[Demo 2](http://cdpn.io/IBzDn)
 
